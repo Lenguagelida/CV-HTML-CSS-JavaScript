@@ -1,26 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Mi CV</title>
 </head>
+
 <body>
+    <nav>
+        <a href="#">Acerca de mi</a>
+        <a href="#">Formación académica</a>
+        <a href="#">Historial laboral</a>
+        <a href="#">Contacto</a>
+    </nav>
     <main>
         <div class="col">
             <img src="" alt="foto-perfil">
             <h1>Nombre Apellido</h1>
-            <h3>Nombre trabajo</h3>
+            <h3>Desarrollador Full Stack Mern</h3>
         </div>
         <div class="col">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit doloribus repellat veritatis nam voluptatum magni magnam
-            ab neque odit illum, libero illo perspiciatis dicta consequatur voluptas eos alias obcaecati.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit doloribus repellat veritatis nam
+                voluptatum magni magnam
+                ab neque odit illum, libero illo perspiciatis dicta consequatur voluptas eos alias obcaecati.
             </p>
         </div>
     </main>
+    <article class="article-1">
+        <h2>Formación Académica</h2>
+        <h3>Educación</h3>
+        <ul>
+            <li>Educación secundaria completo. <span>2014-2017</span> </li>
+            <li>Educación Universitaria orientada a sistemas. <span>En curso 2do año</span> </li>
+        </ul>
+        <h3>Cursos</h3>
+        <ul>
+            <li>Desarrollo Web (CSS3, HTML5) <span> <a href="#">Link certificado</a></span> </li>
+            <li>JavaScript <span><a href="#">Link certificado</a></span> </li>
+            <li>React <span> <a href="#">Link certificado</a></span> </li>
+            <ul>Backend JavaScript
+                <li>NodeJs</li>
+                <li>ExpressJs</li>
+                <li>MongoDB</li>
+                <span> <a href="#">Link certificado</a></span>
+            </ul>
+        </ul>
+    </article>
+    <article class="article-2">
+        <h2>Historial Laboral</h2>
+        <div class="container">
+            <h3>Puesto
+                <h4>Nombre de la empresa</h4>
+                <span>Mes Año - Mes año</span>
+            </h3>
+        </div>
+        <div class="container">
+            <h3>Puesto
+                <h4>Nombre de la empresa</h4>
+                <span>Mes Año - Mes año</span>
+            </h3>
+        </div>
+    </article>
+    <article class="article-3">
+        <h3>Contacto</h3>
+        <form action="#">
+            <label>Nombre</label>
+            <input type="text">
+            <label>Mensaje</label>
+            <textarea cols="30" rows="10"></textarea>
+            <button type="submit">Enviar</button>
+        </form>        
+    </article>
+
+    <footer>
+        <h5>Mis redes sociales</h5>
+        <p>PONER ICONOS DE REDES SOCIALES</p>
+        <p>Página hecha con informacion ficticia con fines academicos</p>
+    </footer>
 
 
 </body>
 <script src="js/main.js"></script>
+
 </html>

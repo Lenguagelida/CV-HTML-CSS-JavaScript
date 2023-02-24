@@ -1,0 +1,23 @@
+main{
+    background-color: #2e406f;
+}
+
+nav{
+    background-color: rgba(150, 150, 200, 0.538);
+}
+
+.article-1{
+    background-color: rgb(74, 117, 74);
+}
+
+.article-2{
+    background-color: rgb(199, 115, 132);
+}
+
+.article-3{
+    background-color: rgb(84, 213, 236);
+}
+
+footer{
+    background-color: rgb(143, 106, 177);
+}
