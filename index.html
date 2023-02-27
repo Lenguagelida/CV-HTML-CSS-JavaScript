@@ -6,67 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+
     <title>Mi CV</title>
 </head>
 
 <body>
-    <nav>
-        <a href="#">Acerca de mi</a>
-        <a href="#">Formación académica</a>
-        <a href="#">Historial laboral</a>
-        <a href="#">Contacto</a>
-        <button id="btnCambiar">Cambiar persona</button>
-    </nav>
-    <main>
-        <div class="col">
-            <img src="" alt="foto-perfil" id="fotoUsuario">
-            <h1 id="nombre">Nombre Apellido</h1>
-            <h3>Desarrollador Full Stack Mern</h3>
-            <h5 id="email">Email</h5>
+    <nav class="container navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-start">
+                    <li class=" nav-item m-1">
+                        <a href="#acerca-mio">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="#formacion-academica">Formación académica</a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="#historial-laboral">Historial laboral</a>
+                    </li>
+                    <li class="nav-item m-1">
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-success d-flex justify-content-end" id="btnCambiar">Cambiar persona</button>
+            </div>
         </div>
-        <div class="col">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugit doloribus repellat veritatis nam
-                voluptatum magni magnam
-                ab neque odit illum, libero illo perspiciatis dicta consequatur voluptas eos alias obcaecati.
+    </nav>
+    <main class="container" id="acerca-mio">
+        <div class="row columna_Perfil">
+            <div class="col-sm-3 col-md-4 col-lg-5 contenedor_Foto">
+                <img src="" alt="foto-perfil" id="fotoUsuario">
+            </div>
+            <div class="col-sm-9 col-md-8 col-lg-7 datos_perfil">
+                <h1 id="nombre">Nombre Apellido</h1>
+                <h4>Desarrollador Web</h4>
+                <h5 id="email">Email</h5>
+            </div>
+        </div>
+        <div class="container acerca_de_mi">
+            <h3>Acerca de mi</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque est officiis quaerat, laudantium
+                quia quo doloribus omnis alias temporibus possimus recusandae nam corporis nihil enim, quis, dolorem
+                libero neque veritatis.
             </p>
         </div>
     </main>
-    <article class="article-1">
-        <h2>Formación Académica</h2>
-        <h3>Educación</h3>
+    <article class="container article-1" id="formacion-academica">
+        <h4>Formación Académica</h4>
+        <h5>Educación</h5>
         <ul>
-            <li>Educación secundaria completo. <span>2014-2017</span> </li>
-            <li>Educación Universitaria orientada a sistemas. <span>En curso 2do año</span> </li>
+            <li>Educación secundaria completo. <span class="text-muted">2014-2017</span> </li>
+            <li>Educación Universitaria orientada a sistemas. <span class="text-muted">En curso 2do año</span> </li>
         </ul>
-        <h3>Cursos</h3>
+        <h5>Cursos</h5>
         <ul>
-            <li>Desarrollo Web (CSS3, HTML5) <span> <a href="#">Link certificado</a></span> </li>
-            <li>JavaScript <span><a href="#">Link certificado</a></span> </li>
-            <li>React <span> <a href="#">Link certificado</a></span> </li>
-            <ul>Backend JavaScript
-                <li>NodeJs</li>
-                <li>ExpressJs</li>
-                <li>MongoDB</li>
-                <span> <a href="#">Link certificado</a></span>
-            </ul>
+            <li>Desarrollo Web (CSS3, HTML5) <span><a href="#" title="Link certificado"><i class="fa-solid fa-square-arrow-up-right"></i></a></span> </li>
+            <li>JavaScript <span><a href="#" title="Link certificado"><i class="fa-solid fa-square-arrow-up-right"></i></a></span> </li>
         </ul>
     </article>
-    <article class="article-2">
-        <h2>Historial Laboral</h2>
+    <article class="article-2" id="historial-laboral">
+        <h4>Historial Laboral</h4>
         <div class="container">
-            <h3>Puesto
-                <h4>Nombre de la empresa</h4>
-                <span>Mes Año - Mes año</span>
-            </h3>
+            <h5>Puesto
+                <h6>Nombre de la empresa</h6>
+                <span class="text-muted">Mes Año - Mes año</span>
+            </h5>
         </div>
         <div class="container">
-            <h3>Puesto
-                <h4>Nombre de la empresa</h4>
-                <span>Mes Año - Mes año</span>
-            </h3>
+            <h5>Puesto
+                <h6>Nombre de la empresa</h6>
+                <span class="text-muted">Mes Año - Mes año</span>
+            </h5>
         </div>
     </article>
-    <article class="article-3">
+    <article class="article-3" id="contacto">
         <h3>Contacto</h3>
         <form action="#">
             <label>Nombre</label>
@@ -74,17 +104,29 @@
             <label>Mensaje</label>
             <textarea cols="30" rows="10"></textarea>
             <button type="submit">Enviar</button>
-        </form>        
+        </form>
     </article>
 
     <footer>
         <h5>Mis redes sociales</h5>
-        <p>PONER ICONOS DE REDES SOCIALES</p>
+        <div>
+            <span><i class="fa-brands fa-facebook"></i></span>
+            <span><i class="fa-brands fa-instagram"></i></span>
+            <span><i class="fa-brands fa-whatsapp"></i></span>
+            <span><i class="fa-brands fa-github"></i></span>
+            <span><i class="fa-brands fa-linkedin"></i></span>
+            </div>
         <p>Página hecha con informacion ficticia con fines academicos</p>
     </footer>
 
 
 </body>
 <script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+    integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>

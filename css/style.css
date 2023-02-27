@@ -1,13 +1,7 @@
-main{
-    background-color: #2e406f;
-}
 
 nav{
-    background-color: rgba(150, 150, 200, 0.538);
-}
-
-.article-1{
-    background-color: rgb(74, 117, 74);
+    background-color:#2e406f;
+    font-family: 'Roboto Slab', serif;
 }
 
 .article-2{
@@ -20,4 +14,77 @@ nav{
 
 footer{
     background-color: rgb(143, 106, 177);
+}
+
+
+/* SECCION DEL PERFIL Y PRESENTACION */
+main{
+    background-color: #2e406f;
+}
+
+.columna_Perfil{
+    color: white;
+    padding: 5px;
+}
+
+.contenedor_Foto{
+    /* border: solid 1px black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.datos_perfil{
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Roboto Slab', serif;
+}
+.datos_perfil h4{
+    font-weight: lighter;
+}
+.datos_perfil h5{
+    font-weight: lighter;
+}
+
+#fotoUsuario{
+    max-width: 150px;
+    border: solid 2px black;
+    margin: 5px;
+}
+
+.acerca_de_mi{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+}
+
+/* SECCION DE ESTUDIOS */
+.article-1{
+    background-color: rgb(74, 117, 74);
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.article-1 h5{
+    text-align: start;
+}
+
+.article-1 ul{
+    text-align: start;
+    font-weight: 400;
+}
+
+.article-1 span{
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.article-1 a{
+    text-decoration: none;
+    color: black;
 }

@@ -20,6 +20,5 @@ const generarPersona = async() => {
     }
 }
 
-
-
 btnCambiarPersona.addEventListener('click',generarPersona);
+document.addEventListener('DOMContentLoaded',generarPersona);
