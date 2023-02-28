@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Mi CV</title>
 </head>
 
 <body>
-    <nav class="container navbar navbar-expand-lg">
+    <nav class="container-fluid navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -44,10 +45,12 @@
                         <a href="#contacto">Contacto</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-success d-flex justify-content-end" id="btnCambiar">Cambiar persona</button>
+                <button class="btn btn-outline-success d-flex justify-content-end" id="btnCambiar">Cambiar
+                    persona</button>
             </div>
         </div>
     </nav>
+    <!-- Seccion perfil -->
     <main class="container" id="acerca-mio">
         <div class="row columna_Perfil">
             <div class="col-sm-3 col-md-4 col-lg-5 contenedor_Foto">
@@ -60,7 +63,7 @@
             </div>
         </div>
         <div class="container acerca_de_mi">
-            <h3>Acerca de mi</h3>
+            <h4>Acerca de mi</h4>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque est officiis quaerat, laudantium
                 quia quo doloribus omnis alias temporibus possimus recusandae nam corporis nihil enim, quis, dolorem
@@ -68,6 +71,8 @@
             </p>
         </div>
     </main>
+
+    <!-- Seccion fomacion academica -->
     <article class="container article-1" id="formacion-academica">
         <h4>Formación Académica</h4>
         <h5>Educación</h5>
@@ -77,36 +82,62 @@
         </ul>
         <h5>Cursos</h5>
         <ul>
-            <li>Desarrollo Web (CSS3, HTML5) <span><a href="#" title="Link certificado"><i class="fa-solid fa-square-arrow-up-right"></i></a></span> </li>
-            <li>JavaScript <span><a href="#" title="Link certificado"><i class="fa-solid fa-square-arrow-up-right"></i></a></span> </li>
+            <li>Desarrollo Web (CSS3, HTML5) <span><a href="#" title="Link certificado"><i
+                            class="fa-solid fa-square-arrow-up-right"></i></a></span> </li>
+            <li>JavaScript <span><a href="#" title="Link certificado"><i
+                            class="fa-solid fa-square-arrow-up-right"></i></a></span> </li>
         </ul>
     </article>
-    <article class="article-2" id="historial-laboral">
-        <h4>Historial Laboral</h4>
-        <div class="container">
-            <h5>Puesto
-                <h6>Nombre de la empresa</h6>
-                <span class="text-muted">Mes Año - Mes año</span>
-            </h5>
-        </div>
-        <div class="container">
-            <h5>Puesto
-                <h6>Nombre de la empresa</h6>
-                <span class="text-muted">Mes Año - Mes año</span>
-            </h5>
+
+    <!-- Seccion historial laboral -->
+    <article class="container article-2" id="historial-laboral">
+        <h4>Historial Laboral</h4>        
+        <div class="seccion-cards">
+            <div class="card col-sm-3 col-md-4 col-lg-4" style="max-width: 12rem;">
+                <img src="assets/logo.jpg" class="card-img-top img-logo" alt="logo-empresa">
+                <div class="card-body">
+                    <h5>Empresa
+                        <h6>Puesto</h6>
+                        <span class="text-muted">Mes Año - Mes año</span>
+                    </h5>
+                </div>
+            </div>
+            <div class="card col-sm-3 col-md-4 col-lg-4" style="max-width: 12rem;">
+                <img src="assets/logo.jpg" class="card-img-top img-logo" alt="logo-empresa">
+                <div class="card-body">
+                    <h5>Empresa
+                        <h6>Puesto</h6>
+                        <span class="text-muted">Mes Año - Mes año</span>
+                    </h5>
+                </div>
+            </div>
+            <div class="card col-sm-3 col-md-4 col-lg-4" style="max-width: 12rem;">
+                <img src="assets/logo.jpg" class="card-img-top img-logo" alt="logo-empresa">
+                <div class="card-body">
+                    <h5>Empresa
+                        <h6>Puesto</h6>
+                        <span class="text-muted">Mes Año - Mes año</span>
+                    </h5>
+                </div>
+            </div>
         </div>
     </article>
-    <article class="article-3" id="contacto">
-        <h3>Contacto</h3>
+
+    <!-- Seccion contacto -->
+    <article class="container article-3" id="contacto">
+        <p>Si necesitas contactarme puedes mandarme un mensaje por aqui:</p>
         <form action="#">
-            <label>Nombre</label>
-            <input type="text">
+            <label>Nombre y Apellido</label>
+            <input type="text" required>
+            <label>Asunto</label>
+            <input type="text" required>
             <label>Mensaje</label>
-            <textarea cols="30" rows="10"></textarea>
-            <button type="submit">Enviar</button>
+            <textarea cols="50" rows="5" required></textarea>
+            <button class="btn btn-outline-dark" type="submit">Enviar</button>
         </form>
     </article>
 
+    <!-- Footer -->
     <footer>
         <h5>Mis redes sociales</h5>
         <div>
@@ -115,7 +146,7 @@
             <span><i class="fa-brands fa-whatsapp"></i></span>
             <span><i class="fa-brands fa-github"></i></span>
             <span><i class="fa-brands fa-linkedin"></i></span>
-            </div>
+        </div>
         <p>Página hecha con informacion ficticia con fines academicos</p>
     </footer>
 
