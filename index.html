@@ -23,12 +23,33 @@
     <title>Mi CV</title>
 </head>
 
-<body>
+<body class="container">
+    <!-- Navbar -->
+    <nav class="navbar container navbar-expand-lg">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav lista-nav">
+                    <a class="nav-link" href="#perfil">Mis Datos</a>
+                    <a class="nav-link" href="#acercaDeMi">Acerca de mi</a>
+                    <a class="nav-link" href="#experiencia">Expereriencia laboral</a>
+                    <a class="nav-link" href="#formacion">Formación Académica</a>
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                    <button class="btn btn-outline-dark btn-sm" id="btnCambiar">Cambiar persona</button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
     <!-- Seccion perfil -->
-    <main class="row seccion-perfil">
-        <img class="col-sm-12 col-md-3 col-lg-3" src="" alt="" id="fotoUsuario">
-        <div class="col-sm-12 col-md-5 col-lg-5 datos-principales">
+    <main class="row seccion-perfil" id="perfil">
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3contenedor-foto">
+            <img src="" alt="" id="fotoUsuario">
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5 datos-principales">
             <h1 class="fw-bold" id="nombre"></h1>
             <p class="fs-4">Desarrollador Web</p>
             <div>
@@ -40,16 +61,15 @@
                 <p class="fw-light" id="telefono"></p>
             </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-4 redes-contacto">
-            <a href=""><i class="bi bi-linkedin"></i>Linkedin</a>
-            <a href=""><i class="bi bi-github"></i>Github</a>
-            <a href=""><i class="bi bi-globe2"></i>Portafolio</a>
-            <span class="badge text-bg-dark fw-light" id="btnCambiar">Cambiar persona</span>
+        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 redes-contacto">
+            <a href="https://www.linkedin.com/home" target="_blank"><i class="bi bi-linkedin"></i>Linkedin</a>
+            <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i>Github</a>
+            <a href="#"><i class="bi bi-globe2"></i>Portafolio</a>
         </div>
     </main>
 
     <!-- Seccion resumen -->
-    <section class="container saludo-objetivos">
+    <section class="container saludo-objetivos" id="acercaDeMi">
         <h2>Acerca de mi</h2>
         <hr>
         <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum consectetur quam, sequi
@@ -60,7 +80,7 @@
     </section>
 
     <!-- Experiencia laboral -->
-    <section class="container experiencia-laboral">
+    <section class="container experiencia-laboral"id="experiencia">
         <h2>Experiencia laboral</h2>
         <hr>
         <article>
@@ -94,7 +114,7 @@
     </section>
 
     <!-- Educacion y cursos -->
-    <section class="container educacion">
+    <section class="container educacion"id="formacion">
         <h2>Formación Académica</h2>
         <hr>
         <article class="formacion">
@@ -126,8 +146,7 @@
     </section>
 
     <!-- Seccion Habilidades -->
-
-    <section class="container habilidades">
+    <section class="container habilidades" id="habilidades">
         <h2>Habilidades</h2>
         <hr>
         <article>
@@ -149,7 +168,7 @@
         </article>
     </section>
 
-    <footer>
+    <footer id="footer">
         <hr>
         <p class="text-center m-3">
             Modelo de Curriculum Vitae con fines académicos. Creado por Daniel Borghese. Febrero 2023
