@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="css/style.css">
 
     <title>Mi CV</title>
@@ -66,7 +70,8 @@
             </div>
             <div>
                 <p class="text-muted">2010-2023</p>
-                <p>Descripcion del puesto Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est, esse itaque necessitatibus
+                <p>Descripcion del puesto Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est, esse
+                    itaque necessitatibus
                     laboriosam nesciunt numquam corrupti optio ducimus! Debitis optio laudantium error ducimus quisquam
                     quidem ad natus iste. Pariatur.
                 </p>
@@ -79,7 +84,8 @@
             </div>
             <div>
                 <p class="text-muted">2010-2023</p>
-                <p>Descripcion del puesto Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est, esse itaque necessitatibus
+                <p>Descripcion del puesto Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est, esse
+                    itaque necessitatibus
                     laboriosam nesciunt numquam corrupti optio ducimus! Debitis optio laudantium error ducimus quisquam
                     quidem ad natus iste. Pariatur.
                 </p>
@@ -92,36 +98,72 @@
         <h2>Formación Académica</h2>
         <hr>
         <article class="formacion">
-            <p>Título Secundario</p>
-            <p>Institución</p>
-            <p>2005-2008</p>
+            <p class="fw-bold titulo">Título Secundario</p>
+            <p class="fst-italic insti">Institución</p>
+            <p class="etapa">2005-2008</p>
         </article>
         <article class="formacion">
-            <p>Carrera Universitaria</p>
-            <p>Institución</p>
-            <p>2008-2015</p>
+            <p class="fw-bold titulo">Carrera Universitaria</p>
+            <p class="fst-italic insti">Institución</p>
+            <p class="etapa">2008-2015</p>
         </article>
         <h2>Cursos</h2>
         <hr>
-        <article>
-            <p>Título Curso</p>
-            <p>Institución</p>
-            <p>2015</p>
-            <a href="">Link Certificado<i class="bi bi-box-arrow-up-right"></i></a>
+        <article class="curso">
+            <p class="fw-bold titulo">Título Curso</p>
+            <p class="fst-italic insti">Institución</p>
+            <p class="etapa">2015</p>
+            <a href=""><i class="bi bi-star-fill me-2"></i>Link Certificado<i
+                    class="bi bi-box-arrow-up-right ms-2"></i></a>
         </article>
-        <article>
-            <p>Título Curso</p>
-            <p>Institución</p>
-            <p>2015</p>
-            <a href="">Link Certificado<i class="bi bi-box-arrow-up-right"></i></a>
+        <article class="curso">
+            <p class="fw-bold titulo">Título Curso</p>
+            <p class="fst-italic insti">Institución</p>
+            <p class="etapa">2015</p>
+            <a href=""><i class="bi bi-star-fill me-2"></i>Link Certificado<i
+                    class="bi bi-box-arrow-up-right ms-2"></i></a>
         </article>
     </section>
 
+    <!-- Seccion Habilidades -->
+
+    <section class="container habilidades">
+        <h2>Habilidades</h2>
+        <hr>
+        <article>
+            <div class="lista">
+                <ul>
+                    <li><i class="fa-brands fa-html5 me-2"></i>HTML5</li>
+                    <li><i class="fa-brands fa-css3-alt me-2"></i>CSS3</li>
+                    <li><i class="fa-brands fa-square-js me-2"></i>JavaScript</li>
+                    <li><i class="fa-brands fa-react me-2"></i>React</li>
+                </ul>
+            </div>
+            <div class="idiomas">
+                <h3>Idiomas</h3>
+                <ul>
+                    <li><i class="fa-solid fa-language me-2"></i>Español</li>
+                    <li><i class="fa-solid fa-language me-2"></i>Ingles</li>
+                </ul>
+            </div>
+        </article>
+    </section>
+
+    <footer>
+        <hr>
+        <p class="text-center m-3">
+            Modelo de Curriculum Vitae con fines académicos. Creado por Daniel Borghese. Febrero 2023
+        </p>
+        <hr>
+    </footer>
 
 </body>
 <script src="js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+    integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>

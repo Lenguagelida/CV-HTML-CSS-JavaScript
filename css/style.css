@@ -2,6 +2,7 @@ body{
     background-color: #e8e5e5;
 }
 /* SECCION PERFIL */
+
 .seccion-perfil{
     background-color: #32445f;
     display: flex;
@@ -81,4 +82,57 @@ hr{
 
 .empresa{
     margin-right: 10px;
+}
+
+/* SECCION FORMACION ACADEMICA */
+
+.educacion{
+    font-family: 'Roboto Slab', serif;
+}
+
+.educacion h2{
+    margin-top: 20px;
+}
+
+.titulo{
+    margin: 0;
+    font-size: larger;
+}
+.insti{
+    font-size: medium;
+    margin: 0;
+}
+
+.etapa{
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+.curso{
+    margin-bottom: 10px;
+}
+
+.curso a{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+}
+
+/* SECCION HABILIDADES */
+
+.habilidades{
+    font-family: 'Roboto Slab', serif;
+}
+
+.habilidades h2{
+    margin-top: 20px;
+}
+
+.habilidades li{
+    font-size: larger;
+}
+
+.habilidades article{
+    display: flex;
+    justify-content: space-between;
 }
