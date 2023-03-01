@@ -3,6 +3,7 @@ const url = 'https://randomuser.me/api/';
 const foto = document.getElementById('fotoUsuario');
 const nombre = document.getElementById('nombre');
 const email = document.getElementById('email');
+const telefono = document.getElementById('telefono');
 
 const generarPersona = async() => {
     try {
@@ -13,7 +14,8 @@ const generarPersona = async() => {
 
         foto.src = objetoPersona.picture.large;
         nombre.textContent = objetoPersona.name.first + " " +  objetoPersona.name.last;
-        email.textContent = "Email: "+ objetoPersona.email;
+        email.textContent =  objetoPersona.email;
+        telefono.textContent = objetoPersona.cell;
 
     } catch (error) {
         console.log(error);

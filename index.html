@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,132 +20,102 @@
 </head>
 
 <body>
-    <nav class="container-fluid navbar navbar-expand-lg fixed-top">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-start">
-                    <li class=" nav-item m-1">
-                        <a href="#acerca-mio">Acerca de mi</a>
-                    </li>
-                    <li class="nav-item m-1">
-                        <a href="#formacion-academica">Formación académica</a>
-                    </li>
-                    <li class="nav-item m-1">
-                        <a href="#historial-laboral">Historial laboral</a>
-                    </li>
-                    <li class="nav-item m-1">
-                        <a href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-                <button class="btn btn-outline-success d-flex justify-content-end" id="btnCambiar">Cambiar
-                    persona</button>
-            </div>
-        </div>
-    </nav>
+
     <!-- Seccion perfil -->
-    <main class="container" id="acerca-mio">
-        <div class="row columna_Perfil">
-            <div class="col-sm-3 col-md-4 col-lg-5 contenedor_Foto">
-                <img src="" alt="foto-perfil" id="fotoUsuario">
+    <main class="row seccion-perfil">
+        <img class="col-sm-12 col-md-3 col-lg-3" src="" alt="" id="fotoUsuario">
+        <div class="col-sm-12 col-md-5 col-lg-5 datos-principales">
+            <h1 class="fw-bold" id="nombre"></h1>
+            <p class="fs-4">Desarrollador Web</p>
+            <div>
+                <i class="bi bi-envelope-at"></i>
+                <p class="fw-light" id="email"></p>
             </div>
-            <div class="col-sm-9 col-md-8 col-lg-7 datos_perfil">
-                <h1 id="nombre">Nombre Apellido</h1>
-                <h4>Desarrollador Web</h4>
-                <h5 id="email">Email</h5>
+            <div>
+                <i class="bi bi-phone"></i>
+                <p class="fw-light" id="telefono"></p>
             </div>
         </div>
-        <div class="container acerca_de_mi">
-            <h4>Acerca de mi</h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque est officiis quaerat, laudantium
-                quia quo doloribus omnis alias temporibus possimus recusandae nam corporis nihil enim, quis, dolorem
-                libero neque veritatis.
-            </p>
+        <div class="col-sm-12 col-md-4 col-lg-4 redes-contacto">
+            <a href=""><i class="bi bi-linkedin"></i>Linkedin</a>
+            <a href=""><i class="bi bi-github"></i>Github</a>
+            <a href=""><i class="bi bi-globe2"></i>Portafolio</a>
+            <span class="badge text-bg-dark fw-light" id="btnCambiar">Cambiar persona</span>
         </div>
     </main>
 
-    <!-- Seccion fomacion academica -->
-    <article class="container article-1" id="formacion-academica">
-        <h4>Formación Académica</h4>
-        <h5>Educación</h5>
-        <ul>
-            <li>Educación secundaria completo. <span class="text-muted">2014-2017</span> </li>
-            <li>Educación Universitaria orientada a sistemas. <span class="text-muted">En curso 2do año</span> </li>
-        </ul>
-        <h5>Cursos</h5>
-        <ul>
-            <li>Desarrollo Web (CSS3, HTML5) <span><a href="#" title="Link certificado"><i
-                            class="fa-solid fa-square-arrow-up-right"></i></a></span> </li>
-            <li>JavaScript <span><a href="#" title="Link certificado"><i
-                            class="fa-solid fa-square-arrow-up-right"></i></a></span> </li>
-        </ul>
-    </article>
+    <!-- Seccion resumen -->
+    <section class="container saludo-objetivos">
+        <h2>Acerca de mi</h2>
+        <hr>
+        <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum consectetur quam, sequi
+            deleniti magnam
+            obcaecati, repellat adipisci inventore qui, ea expedita quibusdam quae quia natus amet. Illo impedit dicta
+            veniam!
+        </p>
+    </section>
 
-    <!-- Seccion historial laboral -->
-    <article class="container article-2" id="historial-laboral">
-        <h4>Historial Laboral</h4>        
-        <div class="seccion-cards">
-            <div class="card col-sm-3 col-md-4 col-lg-4" style="max-width: 12rem;">
-                <img src="assets/logo.jpg" class="card-img-top img-logo" alt="logo-empresa">
-                <div class="card-body">
-                    <h5>Empresa
-                        <h6>Puesto</h6>
-                        <span class="text-muted">Mes Año - Mes año</span>
-                    </h5>
-                </div>
+    <!-- Experiencia laboral -->
+    <section class="container experiencia-laboral">
+        <h2>Experiencia laboral</h2>
+        <hr>
+        <article>
+            <div class="cargo-empresa">
+                <p class="puesto">Puesto</p>
+                <p class="empresa">Empresa</p>
             </div>
-            <div class="card col-sm-3 col-md-4 col-lg-4" style="max-width: 12rem;">
-                <img src="assets/logo.jpg" class="card-img-top img-logo" alt="logo-empresa">
-                <div class="card-body">
-                    <h5>Empresa
-                        <h6>Puesto</h6>
-                        <span class="text-muted">Mes Año - Mes año</span>
-                    </h5>
-                </div>
+            <div>
+                <p class="text-muted">2010-2023</p>
+                <p>Descripcion del puesto Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est, esse itaque necessitatibus
+                    laboriosam nesciunt numquam corrupti optio ducimus! Debitis optio laudantium error ducimus quisquam
+                    quidem ad natus iste. Pariatur.
+                </p>
             </div>
-            <div class="card col-sm-3 col-md-4 col-lg-4" style="max-width: 12rem;">
-                <img src="assets/logo.jpg" class="card-img-top img-logo" alt="logo-empresa">
-                <div class="card-body">
-                    <h5>Empresa
-                        <h6>Puesto</h6>
-                        <span class="text-muted">Mes Año - Mes año</span>
-                    </h5>
-                </div>
+        </article>
+        <article>
+            <div class="cargo-empresa">
+                <p class="puesto">Puesto</p>
+                <p class="empresa">Empresa</p>
             </div>
-        </div>
-    </article>
+            <div>
+                <p class="text-muted">2010-2023</p>
+                <p>Descripcion del puesto Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi est, esse itaque necessitatibus
+                    laboriosam nesciunt numquam corrupti optio ducimus! Debitis optio laudantium error ducimus quisquam
+                    quidem ad natus iste. Pariatur.
+                </p>
+            </div>
+        </article>
+    </section>
 
-    <!-- Seccion contacto -->
-    <article class="container article-3" id="contacto">
-        <p>Si necesitas contactarme puedes mandarme un mensaje por aqui:</p>
-        <form action="#">
-            <label>Nombre y Apellido</label>
-            <input type="text" required>
-            <label>Asunto</label>
-            <input type="text" required>
-            <label>Mensaje</label>
-            <textarea cols="50" rows="5" required></textarea>
-            <button class="btn btn-outline-dark" type="submit">Enviar</button>
-        </form>
-    </article>
-
-    <!-- Footer -->
-    <footer>
-        <h5>Mis redes sociales</h5>
-        <div>
-            <span><i class="fa-brands fa-facebook"></i></span>
-            <span><i class="fa-brands fa-instagram"></i></span>
-            <span><i class="fa-brands fa-whatsapp"></i></span>
-            <span><i class="fa-brands fa-github"></i></span>
-            <span><i class="fa-brands fa-linkedin"></i></span>
-        </div>
-        <p>Página hecha con informacion ficticia con fines academicos</p>
-    </footer>
+    <!-- Educacion y cursos -->
+    <section class="container educacion">
+        <h2>Formación Académica</h2>
+        <hr>
+        <article class="formacion">
+            <p>Título Secundario</p>
+            <p>Institución</p>
+            <p>2005-2008</p>
+        </article>
+        <article class="formacion">
+            <p>Carrera Universitaria</p>
+            <p>Institución</p>
+            <p>2008-2015</p>
+        </article>
+        <h2>Cursos</h2>
+        <hr>
+        <article>
+            <p>Título Curso</p>
+            <p>Institución</p>
+            <p>2015</p>
+            <a href="">Link Certificado<i class="bi bi-box-arrow-up-right"></i></a>
+        </article>
+        <article>
+            <p>Título Curso</p>
+            <p>Institución</p>
+            <p>2015</p>
+            <a href="">Link Certificado<i class="bi bi-box-arrow-up-right"></i></a>
+        </article>
+    </section>
 
 
 </body>
@@ -156,8 +123,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
-    integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>
